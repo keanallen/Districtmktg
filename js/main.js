@@ -4,6 +4,10 @@ jQuery(document).ready(function($) {
         $(".mb-neg-8").removeClass('mb-neg-8');
     }
 
+    window.submit = function() {
+        this.alert(12);
+    }
+
     $('.slayd').slick({
         dots: true,
         infinite: true,
