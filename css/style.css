@@ -714,13 +714,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #2dc997;
 }
 
+input.has-error:focus {
+  border-color: red;
+}
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
-
+.sp-title {
+  background-color: #111;
+  padding: 10px;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 20px;
+}
 /* Services Section
 --------------------------------*/
 #eventmgmt {
@@ -734,6 +743,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0 60px 0;
   background-image: url(../img/digitalmarketing.jpg);
   color: #eee;
+  border-bottom: 13px solid #eee;
 }
 
 #services .box {

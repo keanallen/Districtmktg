@@ -1,3 +1,46 @@
+window.send = function(e) {
+  ($fname = $("#fname")),
+    ($lname = $("#lname")),
+    ($email = $("#email")),
+    ($phone = $("#phone")),
+    ($cweb = $("#cweb")),
+    ($message = $("#message"));
+  $err = $("#errormessage");
+
+  if ($fname.val().trim() == "") {
+    $fname.focus();
+    $fname.addClass("has-error");
+  } else if ($lname.val().trim() == "") {
+    $lname.focus();
+    $lname.addClass("has-error");
+  } else if ($email.val().trim() == "") {
+    $email.focus();
+    $email.addClass("has-error");
+  } else if ($phone.val().trim() == "") {
+    $phone.focus();
+    $phone.addClass("has-error");
+  } else if ($message.val().trim() == "") {
+    $message.focus();
+    $message.addClass("has-error");
+  } else {
+    $("input").removeClass("has-error");
+    $DATA =
+      "fname=" +
+      $fname.val() +
+      "&lname=" +
+      $lname.val() +
+      "&email=" +
+      $email.val() +
+      "&phone=" +
+      $phone.val() +
+      "&cweb=" +
+      $cweb.val() +
+      "&message=" +
+      $message.val();
+
+    this.alert($DATA);
+  }
+};
 jQuery(document).ready(function($) {
   // hide  main header
   $("#header").hide();
@@ -16,10 +59,6 @@ jQuery(document).ready(function($) {
   if ($(window).width() <= 575) {
     $(".mb-neg-8").removeClass("mb-neg-8");
   }
-
-  window.submit = function() {
-    this.alert(12);
-  };
 
   $(".slayd").slick({
     dots: true,
