@@ -38,7 +38,24 @@ window.send = function(e) {
       "&message=" +
       $message.val();
 
-    this.alert($DATA);
+    $.ajax({
+      type: "POST",
+      url: "sendmail.php",
+      data: $DATA,
+      cache: false,
+      beforeSend: function(data) {
+        $("#btnsend").text("Sending...");
+      },
+      success: function(data) {
+        $("#btnsend").prop("disabled", true);
+        $("#btnsend").text("Submit");
+        if (data == 1) {
+          alert("Your message has been delivered.\n\nThank you!");
+        } else {
+          alert(data);
+        }
+      }
+    });
   }
 };
 jQuery(document).ready(function($) {
