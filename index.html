@@ -33,13 +33,12 @@
 
         <div class="container">
             <div id="logo" class="pull-left">
-                <a href="#hero">DISTRICT MARKETING</a>
+                <a href="#hero"><img src="img/logoo.png" width="70px"></a>
                 <!-- Uncomment below if you prefer to use a text logo -->
                 <!--<h1><a href="#hero">Regna</a></h1>-->
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="#hero">Home</a></li>
                     <li><a href="#about">Facts</a></li>
                     <li><a href="#facts">About Us</a></li>
                     <li><a href="#services">Services</a></li>
@@ -66,7 +65,16 @@
         <section class="hero" style="background-image: url('img/a3.jpg')"></section>
         <section class="hero" style="background-image: url('img/a4.jpg')"></section>
         <!-- #hero -->
+
     </div>
+    <nav  class="navbar2 shadow">
+        <ul class="nav-menu">
+            <li><a href="#about">Facts</a></li>
+            <li><a href="#facts">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
     <main id="main">
         <!--==========================
               About Us Section
@@ -76,7 +84,7 @@
                 <div class="row about-container">
                     <div class="col-lg-6 background order-lg-1 order-1 wow fadeInRight"></div>
                     <div class="col-lg-6 dm-theme-bg order-lg-2 order-2">
-                        <h2 class="title wow fadeInUp text-light">Few Words About Us</h2>
+                        
                         <p class="wow fadeInUp text-justify">
                             In District Marketing, not only we target adding value to your company and create an overarching image that represents your firm in a positive light, but we have our own strategy which makes us stand out than others in our field. We ensure about donating
                             a percentage of our profit with every deal we make to charities locally and globally. As Charities change the lives of people in need every day with even the smallest of donations making a large impact in a community. However,
@@ -99,7 +107,7 @@
                 ============================-->
         <section id="facts">
             <!-- YEAR OF ZAYED -->
-            <div class="container wow fadeIn zayed"></div>
+            <div class="container wow fadeInUp zayed"></div>
             <!-- MAIN ABOUT US -->
             <div class="divider-dashed mt-5"></div>
             <div class="container">
@@ -131,9 +139,9 @@
                 Services Section
                 ============================-->
         <section id="services">
-            <div class="container wow fadeIn">
+            <div class="container wow fadeIn" >
                 <div class="section-header">
-                    <h3 class="section-title wow fadeInUp">Digital Marketing</h3>
+                    <h3 class="section-title wow fadeInUp text-white">Digital Marketing</h3>
                     <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                     </p>
                 </div>
@@ -179,12 +187,13 @@
                     </div>
                 </div>
             </div>
-            <div class="divider-dashed mb-5"></div>
-            <div class="container wow fadeIn">
+        </section>
+        <section id="eventmgmt">
+           
+            <div class="container wow fadeIn" >
                 <div class="section-header">
-                    <h3 class="section-title wow fadeInUp">Events Management</h3>
-                    <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                    </p>
+                    <h3 class="section-title wow fadeInUp text-white sp-title" >Events Management</h3>
+                    
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-4 mb-2 wow fadeInUp">
@@ -271,7 +280,7 @@
                             <div id="errormessage"></div>
                             <p class="text-light">Please fill in the form below and we'll be sure ro reach out.</p>
 
-                            <form action="#" method="post" role="form" class="contactForm">
+                            <form action="#" class="contactForm">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
@@ -300,11 +309,11 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" placeholder="*Message" style="height:100px;color:#444"></textarea>
+                                            <textarea class="form-control" id="message" placeholder="*Message" style="height:100px;color:#444"></textarea>
                                         </div>
                                     </div>
                                     <span class="text-warning p-3">Fields marked with (*) are mandatory.</span>
-                                    <button type="button" class="btn btn-info btn-block" onclick="submit()">Submit</button>
+                                    <button id="btnsend" type="button" class="btn btn-info btn-block" onclick="send()">Submit</button>
                                 </div>
                             </form>
                         </div>
