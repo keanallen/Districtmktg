@@ -14,6 +14,7 @@ body {
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
+
 .navbar2 {
   text-align: center;
   padding: 10px;
@@ -23,11 +24,13 @@ body {
   position: absolute;
   border-bottom: 1px solid #00796b;
 }
-.navbar2 > ul {
+
+.navbar2>ul {
   padding: 5px;
   display: inline-block;
   text-align: center !important;
 }
+
 #form-contact {
   position: absolute;
   width: 400px;
@@ -40,6 +43,7 @@ body {
     position: relative;
     margin: auto;
   }
+
   .contact {
     text-align: center;
   }
@@ -223,6 +227,7 @@ h6 {
   #header #logo h1 {
     font-size: 26px;
   }
+
   #header #logo img {
     max-height: 40px;
   }
@@ -353,12 +358,12 @@ h6 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -417,11 +422,11 @@ h6 {
   outline: none;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 10px;
 }
 
-.nav-menu > li > a:before {
+.nav-menu>li>a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -437,8 +442,8 @@ h6 {
 }
 
 .nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .menu-active > a:before {
+.nav-menu li:hover>a:before,
+.nav-menu .menu-active>a:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -717,12 +722,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 input.has-error:focus {
   border-color: red;
 }
+
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
+
 .sp-title {
   background-color: #111;
   padding: 10px;
@@ -730,6 +737,7 @@ input.has-error:focus {
   margin: auto;
   margin-bottom: 20px;
 }
+
 /* Services Section
 --------------------------------*/
 #eventmgmt {
@@ -737,6 +745,7 @@ input.has-error:focus {
   padding: 80px 0 60px 0;
   background-image: url(../img/eventsmanagements.jpg);
 }
+
 #services {
   background: #fff;
   background-size: cover;
