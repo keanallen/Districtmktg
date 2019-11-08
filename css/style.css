@@ -91,21 +91,12 @@ body {
 }
 
 .zayed {
-<<<<<<< HEAD
-    background-image: url('../img/yearly_banner.png');
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 100%;
-=======
   background-image: url("../img/yearly_banner.png");
   background-size: 80%;
   background-position: center center;
   background-repeat: no-repeat;
   height: 300px;
   width: 100%;
->>>>>>> 6d20869540f390306495739e92fbd8149c54fb0e
 }
 
 .divider-dashed {
